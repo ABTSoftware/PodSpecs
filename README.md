@@ -1,5 +1,9 @@
-# PodSpecs
-A Spec repo for SciChart.iOS pods
+# SciChart.iOS
+A podspec repository for SciChart iOS, high performance real-time iOS chart library.
+
+SciChart iOS is a Feature Rich and Powerful OpenGL ES & Metal 2D & 3D Chart component for Scientific, Medical, Financial and Enterprise apps.
+
+Create stunning 2D & 3D charting applications in Swift, Objective-C or Xamarin.iOS with our award winning, feature-rich iOS chart library.
 
 ## Example usage 
 
@@ -9,21 +13,25 @@ In a podfile, add the following
 // Define the SciChart cocoapods source
 source 'https://github.com/ABTSoftware/PodSpecs.git'
 
-// Define workspace
-workspace 'My.Application'
+workspace 'MyApplication'
+project 'MyApplication/MyApplication.xcodeproj'
 
-// Define projects
-project 'My.Application/My.Application.xcodeproj'
-
-// Define a global platform for your project
 platform :ios, '8.0'
 
-// Define pods for target SciChartShowcase
-target 'MyApp' do
-    use_frameworks!
-    pod 'SciChart'
-    project 'My.Application/My.Application.xcodeproj'
+use_frameworks!
+target 'MyApplication' do
+  # Use the latest available Version
+  pod 'SciChart'
 end
 ```
 
-More info found at https://guides.cocoapods.org/using/using-cocoapods
+Once finished with the podfile - run `pod install`
+
+For more information please see [Integrating SciChart using CocoaPods](https://www.scichart.com/documentation/ios/current/integrating-scichart-libraries.html#integrating-scichart-using-cocoapods) and official [Using CocoaPods](https://guides.cocoapods.org/using/using-cocoapods) guide
+
+## Authors
+[SciChart Ltd.](http://scichart.com/)
+
+## License
+SciChart® is a commercial software.
+The full SciChart® Software License Agreement (SLA) can be found at https://www.scichart.com/scichart-eula
