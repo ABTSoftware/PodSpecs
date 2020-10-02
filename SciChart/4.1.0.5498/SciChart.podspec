@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.documentation_url = "https://www.scichart.com/documentation/ios/current/" 
 
     spec.author = { "SciChart Ltd." => "sales@scichart.com" }
-    spec.license = { :type => "Commercial", :file => "LICENSE.txt" }
+    spec.license = { :type => "Commercial", :file => "SciChart.xcframework/LICENSE" }
 
     spec.source = { :http => "https://github.com/ABTSoftware/PodSpecs/releases/download/v#{spec.version}/SciChart_iOS_#{spec.version}.zip" }
     spec.ios.framework  = 'UIKit', 'Metal'
